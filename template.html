@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Список товаров</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Список товаров</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Товар</th>
+        <th>Цена (руб.)</th>
+        <th>Количество</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ product }}</td>
+        <td>{{ price }}</td>
+        <td>{{ qty }}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
